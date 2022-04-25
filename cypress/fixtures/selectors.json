@@ -1,0 +1,24 @@
+{
+    "loginEmail": "[for=email] > .login__input",
+    "loginPass": "[for=pwd] > .login__input",
+    "loginBtn": ".login__button",
+    "newHall": ".conf-step__wrapper > :nth-child(3) > .conf-step__button",
+    "nameHall": "form > .conf-step__label > .conf-step__input",
+    "addHall": "form > .conf-step__buttons > .conf-step__button-accent",
+    "hallConfiguration": "#hall-configuration > .conf-step__wrapper",
+    "deleteHallButton": ".popup__wrapper .conf-step__button-accent",
+    "saveBtn": "#hall-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
+    "movieConfiguration": "#grid-session > .conf-step__wrapper",
+    "addMovie": ".conf-step__paragraph > a > .conf-step__button",
+    "movieTitle": ".popup__form > :nth-child(1) > .conf-step__input",
+    "duration": ":nth-child(2) > .conf-step__input",
+    "description": ".popup__form > :nth-child(3) > .conf-step__input",
+    "country": ":nth-child(4) > .conf-step__input",
+    "addMovieBtn": "[value='Добавить фильм']",
+    "addPoster": "[value='Загрузить постер']",
+    "filmInSchedule": "[draggable='true'][data-film-id='80']",
+    "schedule": "[data-hall-id='2014'] > .conf-step__seances-timeline",
+    "day": ".page-nav > a:nth-child(4)",
+    "time": ":nth-child(3) > .movie-seances__list > .movie-seances__time-block > .movie-seances__time"
+
+}

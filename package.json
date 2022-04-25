@@ -1,0 +1,22 @@
+{
+  "name": "cypress_2",
+  "version": "1.0.0",
+  "description": "cinema halls testing",
+  "main": "index.js",
+  "scripts": {
+    "cy.dash": "npx cypress run --record --key b5e98532-1222-462c-bea1-c701e388804a"
+
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "lyudaostroumova",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.4"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.1.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}
