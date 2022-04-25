@@ -3,7 +3,7 @@ const testData = require("../fixtures/testData.json");
 const selectors = require("../fixtures/selectors");
 
 
-it.skip("Should create a new hall", () => {
+it("Should create a new hall", () => {
     cy.login(`${login.email}`, `${login.password}`);
     cy.contains("Управление залами").should("be.visible");
     cy.newHall(testData.hallName);
@@ -12,7 +12,7 @@ it.skip("Should create a new hall", () => {
     
 });
 
-it.skip("Should add a movie", () => {
+it("Should add a movie", () => {
     cy.login(`${login.email}`, `${login.password}`);
     cy.addMovie(
         testData.movieTitle, 
@@ -23,15 +23,22 @@ it.skip("Should add a movie", () => {
 
 });
 
-it.skip("Should add a movie into schedule", () => {
+it("Should add a movie into schedule", () => {
     cy.login(`${login.email}`, `${login.password}`);
     cy.get(selectors.filmInSchedule).drag(selectors.schedule);
     
 });
 
+it("Should close sales", () => {
+    cy.login(`${login.email}`, `${login.password}`);
+    cy.openSales(testData.hallName);
+    cy.contains("Продажа билетов открыта!!!").should("be.visible");
+});
+
+
 it("Should open sales", () => {
     cy.login(`${login.email}`, `${login.password}`);
-    cy.openSales(testData.hallName2);
+    cy.openSales(testData.hallName);
     cy.contains("Продажа билетов открыта!!!").should("be.visible");
 });
 

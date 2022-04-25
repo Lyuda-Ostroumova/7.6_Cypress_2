@@ -76,7 +76,7 @@ Cypress.Commands.add("closeSales", (hallName) => {
   cy.contains("Все готово к открытию").should("be.visible");
 });
 
-Cypress.Commands.add("bookPlaces", (hallName) => {
+Cypress.Commands.add("bookPlaces",() => {
   cy.get(selectors.day).click();
   cy.get(selectors.time).click();
   seats.forEach(seat=> {

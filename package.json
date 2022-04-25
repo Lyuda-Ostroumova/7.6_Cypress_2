@@ -4,7 +4,7 @@
   "description": "cinema halls testing",
   "main": "index.js",
   "scripts": {
-    "cy.dash": "npx cypress run --record --key b5e98532-1222-462c-bea1-c701e388804a"
+    "cy:dash": "npx cypress run --record --key b5e98532-1222-462c-bea1-c701e388804a"
 
   },
   "keywords": [
