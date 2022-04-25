@@ -73,7 +73,6 @@ Cypress.Commands.add("openSales", (hallName) => {
 Cypress.Commands.add("closeSales", (hallName) => {
   cy.get(`#start-sales .conf-step__selectors-box [value=${hallName}]`).click();
   cy.contains("Закрыть продажу билетов").click();
-  cy.contains("Все готово к открытию").should("be.visible");
 });
 
 Cypress.Commands.add("bookPlaces",() => {

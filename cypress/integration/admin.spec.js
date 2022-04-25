@@ -6,7 +6,7 @@ const selectors = require("../fixtures/selectors");
 it("Should create a new hall", () => {
     cy.login(`${login.email}`, `${login.password}`);
     cy.contains("Управление залами").should("be.visible");
-    cy.newHall(testData.hallName);
+    cy.newHall(testData.hallName2);
     cy.get(`#hall-configuration [value=${testData.hallName2}]`).click();
     cy.get(selectors.saveBtn).click();
     
@@ -31,8 +31,8 @@ it("Should add a movie into schedule", () => {
 
 it("Should close sales", () => {
     cy.login(`${login.email}`, `${login.password}`);
-    cy.openSales(testData.hallName);
-    cy.contains("Продажа билетов открыта!!!").should("be.visible");
+    cy.closeSales(testData.hallName);
+    cy.contains("Все готово к открытию").should("be.visible");
 });
 
 
